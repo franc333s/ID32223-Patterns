@@ -11,27 +11,22 @@
   <title>Pattern Library</title>
 </head>
 <body>
-
   <main class="pattern-content">
     <h1 class="h2">Marina's Pattern Library</h1>
-
     <section class="pattern-section">
       <h2 class="pattern-title">Fonts</h2>
       <h4 class="roboto-condensed--light">Roboto Condensed Light</h4>
       <h4>Roboto Condensed Bold</h4>
+      <p class="ladi--weak">Ladi Weak</p>
     </section>
-
     <section class="pattern-section">
       <h2 class="pattern-title">Colors</h2>
-
       <h3 class="h5">Main color</h3>
       <div class="pattern-color bg-color-blue" data-color="#0000FF"></div>
-
       <h3 class="h5">Secondary colors</h3>
       <div class="pattern-color bg-color-black" data-color="#0F0F0F"></div>
       <div class="pattern-color bg-color-grey" data-color="#F5F5F5"></div>
     </section>
-
     <section class="pattern-section">
       <h2 class="pattern-title">Headers</h2>
       <h1 data-header="h1">Whereas recognition of the inherent dignity</h1>
@@ -41,34 +36,68 @@
       <h5 data-header="h5">Whereas recognition of the inherent dignity</h5>
       <h6 data-header="h6">Whereas recognition of the inherent dignity</h6>
     </section>
-
     <section class="pattern-section">
       <h2 class="pattern-title">Buttons</h2>
       <h3 class="h5">Main buttons <code>class="btn"</code> or <code>&#10092;button&#10093;</code></h3>
       <button class="btn">Primary action</button>
-
+      <a href="#" class="btn">Button link</a>
       <h3 class="h5">Secondary buttons<code>class="btn--secondary"</code></h3>
       <button class="btn--secondary">Secondary action</button>
-
-      <h3 class="h5">Cancelled buttons<code>class="btn--cancelled"</code></h3>
-      <button class="btn--cancelled">Cancelled button</button>
-      
-
-    </section>
-
-    <section class="pattern-section">
-      <h2 class="pattern-title">Buttons</h2>
-      <h3 class="h5">Main Buttons <code>class="btn"</code> or <code>&#10092;button&#10093;</code></h3>
-      <button>Action</button>
-      <a href="#" class="btn">Button link</a>
-
-      <h3 class="h5">Secondary Buttons <code>class="btn btn--secondary"</code></h3>
-      <button class="btn--secondary">Action</button>
       <a href="#" class="btn btn--secondary">Button Link</a>
-
-  
+    </section>
+    <section class="pattern-section">
+      <h2 class="pattern-title">Text examples</h2>
+      <h3 class="h4 uppercase-text">About the pattern library</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facere hic asperiores provident adipisci placeat nesciunt nam nostrum. Perferendis ipsam quas nulla atque, eaque aut accusantium blanditiis <strong class="font-blue">consequatur</strong> architecto! Nostrum? Exercitationem corrupti placeat nostrum reiciendis ad ipsum facilis. Repudiandae harum sed, officia voluptates dolore, dolores ipsa odio veniam modi, temporibus quas quos.</p>
+      
+      <p class="h1">I’m Marina and I am a <br><strong>Web Designer</strong> based <br>in València (Spain)</p>
     </section>
   </main>
-
+  <main class="pattern-content"></main>
+    <section class="pattern-content-bgcolor-blue">
+      <p class="small-p font-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facere hic asperiores provident adipisci placeat nesciunt nam nostrum. Perferendis ipsam quas nulla atque, eaque aut accusantium blanditiis consequatur architecto! Nostrum? <strong>Exercitationem corrupti</strong> placeat nostrum reiciendis ad ipsum facilis. Repudiandae harum sed, officia voluptates dolore, dolores ipsa odio veniam modi, temporibus quas quos.</p>
+    </section>
+    </main>
+    <main class="pattern-content">
+    <section class="pattern-section">
+      <p class="small-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facere hic asperiores provident adipisci placeat nesciunt nam nostrum. Perferendis <span class="ladi--weak">the internet</span> nulla atque, eaque aut accusantium blanditiis consequatur architecto! Nostrum? <strong class="font-blue">Exercitationem corrupti</strong> placeat nostrum reiciendis ad ipsum facilis. Repudiandae harum sed, officia voluptates dolore, dolores ipsa odio veniam modi, temporibus quas quos.</p>
+    </section>
+    <section class="pattern-section">
+      <h2 class="pattern-title">Inputs</h2>
+      <p class="h4">Contact form</p>
+      <form>
+        <label for="nombre">First name:</label><br>
+        <input type="text" name="nombre" placeholder="John"><br>
+        <label for="apellido">Last name:</label><br>
+        <input type="text" name="apellido" placeholder="Smith"><br>
+        <label for="correo">Email:</label><br>
+        <input type="email" name="correo" placeholder="john@smith.com"><br>
+        <label for="telefono">Phone:</label><br>
+        <input type="tel" name="telefono" placeholder="123-4567-8901"><br>
+        <!-- Por que aqui no sale en rojo al introducir letras??? -->
+        <input type="submit" class="btn">
+      </form>
+      <p class="h4">Radio buttons</p>
+      <p class="smaller-p">¿Cómo prefieres que nos pongamos en contacto contigo?</p>
+      <form>
+        <input type="radio" name="preferred_contact" value="email">
+        <label for="html">Email</label><br>
+        <input type="radio" name="preferred_contact" value="telefono">
+        <label for="css">Teléfono</label><br>
+        <input type="radio" name="preferred_contact" value="correo">
+        <label for="javascript">Correo ordinario</label>
+      </form> 
+      <p class="h4">Checkboxes</p>
+      <p class="smaller-p">¿Qué tipo de contenido prefieres recibir?</p>
+      <input type="checkbox" name="gatitos" value="gatitos">
+      <label for="gatitos">Información sobre gatitos</label><br>
+      <input type="checkbox" name="perretes" value="perretes">
+      <label for="perretes">Información sobre perretes</label><br>
+      <input type="checkbox" name="dinosaurios" value="dinosaurios">
+      <label for="dinosaurios">Información sobre dinosaurios</label>
+    </form>
+    </section>
+  </main>
+  </main>
 </body>
 </html>
